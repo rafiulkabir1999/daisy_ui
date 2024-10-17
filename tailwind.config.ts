@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,  // To center the container
+        // padding: '1rem',  // Default padding for all screens
+        screens: {
+          sm: '100%',  // Full width on small screens
+          md: '100%',  // Full width on medium screens
+          lg: '1140px',  // Set the width to 1140px for large screens
+          xl: '1140px',  // Keep 1140px for extra-large screens
+        },
+      },
+      
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
